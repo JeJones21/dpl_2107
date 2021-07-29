@@ -20,13 +20,14 @@ RSpec.describe Author do
   describe 'Object Methods' do
     before :each do
       @jane_eyre = @charlotte_bronte.write("Jane Eyre", "October 16, 1847")
-      
+      @villette = @charlotte_bronte.write("Villette", "1853")
     end
 
     it "can write books" do
       expect(@jane_eyre).to be_a(Book)
       expect(@jane_eyre.class).to eq(Book)
       expect(@jane_eyre.title).to eq("Jane Eyre")
+      expect(@villette).to be_a(Book)
     end
   end
 end
