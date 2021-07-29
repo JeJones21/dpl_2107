@@ -7,6 +7,9 @@ RSpec.describe Author do
   end
 
   describe 'Object Existence' do
+    it "exists" do
+
     expect(@charlotte_bronte).to be_a(Author)
+    end 
   end
 end
