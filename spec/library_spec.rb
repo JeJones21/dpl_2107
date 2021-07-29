@@ -10,5 +10,11 @@ RSpec.describe Library do
     it "exists" do
       expect(@dpl).to be_a(Library)
     end
-  end 
+  end
+
+  describe 'Object Methods' do
+    it "has readable attributes" do
+      expect(@dpl.name).to eq("Denver Public Library")
+    end
+  end
 end
