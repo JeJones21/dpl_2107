@@ -16,4 +16,14 @@ RSpec.describe Author do
       expect(@charlotte_bronte.books).to eq([])
     end
   end
+
+  describe 'Object Methods' do
+    before :each do
+      @jane_eyre = @charlotte_bronte.write("Jane Eyre", "October 16, 1847")
+    end
+
+    it "can write books" do
+      expect(@jane_eyre).to be_a(Book)
+    end
+  end
 end
