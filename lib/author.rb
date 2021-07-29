@@ -8,5 +8,8 @@ class Author
     @last_name = info[:last_name]
   end
 
+  def name
+    @first_name + " " + @last_name
+  end
 
 end
